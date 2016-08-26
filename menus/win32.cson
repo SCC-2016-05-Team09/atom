@@ -26,7 +26,6 @@
       { label: 'Clos&e Window', command: 'window:close' }
       { type: 'separator' }
       { label: 'E&xit', command: 'application:quit' }
-      { label: 'This is another quit which do the samething as above haha!', command: 'application:quit' }
     ]
   }
 
