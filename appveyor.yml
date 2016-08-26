@@ -25,8 +25,8 @@ build_script:
   - cd %APPVEYOR_BUILD_FOLDER%
   - C:\projects\atom\script\cibuild.cmd
 
-test_script:
-	- npm test
+test:
+- node script/test
 deploy: off
 artifacts:
   - path: out\**\AtomSetup.exe
