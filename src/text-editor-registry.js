@@ -38,9 +38,9 @@ const GRAMMAR_SELECTION_RANGE = Range(Point.ZERO, Point(10, 0)).freeze()
 // done using your editor, be sure to call `dispose` on the returned disposable
 // to avoid leaking editors.
 export default class TextEditorRegistry {
-  constructor ({config, grammarRegistry, clipboard, assert, packageManager}) {
+  constructor ({config, grammarRegistry, board, assert, packageManager}) {
     this.assert = assert
-    this.clipboard = clipboard
+    this.board = board
     this.config = config
     this.grammarRegistry = grammarRegistry
     this.scopedSettingsDelegate = new ScopedSettingsDelegate(config)
@@ -109,7 +109,7 @@ export default class TextEditorRegistry {
 
   build (params) {
     params = Object.assign({
-      clipboard: this.clipboard,
+      board: this.board,
       assert: this.assert
     }, params)
 
