@@ -2,10 +2,11 @@
 @import "octicon-utf-codes";
 @import "octicon-mixins";
 
+//Just a comment
 atom-text-editor {
   display: block;
   font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  height: 80%;
+  height: 100%;
 }
 
 atom-text-editor[mini] {
@@ -61,7 +62,7 @@ atom-text-editor {
       display: inline-block;
       visibility: hidden;
       opacity: .6;
-      padding: 0 .8em;
+      padding: 0 .4em;
 
       &::before {
         text-align: center;
@@ -81,7 +82,7 @@ atom-text-editor {
 
   .gutter, .gutter:hover {
     .line-number.folded .icon-right {
-      .octicon(chevron-right, 1.2em);
+      .octicon(chevron-right, 0.8em);
 
       visibility: visible;
 
@@ -203,7 +204,7 @@ atom-text-editor {
     right: 0;
     bottom: 0;
 
-    width: 30px;
+    width: 15px;
     overflow-x: hidden;
     overflow-y: auto;
     z-index: 3;
