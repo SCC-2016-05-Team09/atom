@@ -1,5 +1,5 @@
 /** @babel */
-//A comment to trigger build
+
 let ParsedColor = null
 
 // Essential: A simple color class returned from {Config::get} when the value
