@@ -8,6 +8,9 @@ platform:
   - x86
 
 environment:
+  my_variable:
+    secure: <encrypt_value>
+
   global:
     ATOM_DEV_RESOURCE_PATH: c:\projects\atom
     ATOM_ACCESS_TOKEN:
@@ -15,6 +18,7 @@ environment:
     ATOM_NOISY_BUILD: 1
 
   matrix:
+  - fast_finish: true
   - NODE_VERSION: 4.4.5
 
 install:
