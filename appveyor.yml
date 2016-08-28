@@ -35,7 +35,7 @@ artifacts:
     name: AtomSetup.exe
   - path: out\**\AtomSetup.msi
     name: AtomSetup.msi
-  - path: out\**\report.txt
+  - path: atom\report.txt
 	name: report.txt
 
 cache:
