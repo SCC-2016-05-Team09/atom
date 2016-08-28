@@ -27,6 +27,7 @@ build_script:
   - C:\projects\atom\script\cibuild.cmd
 
 after_build:
+ - cmd: npm install clog -g
  - cmd: clog src\main-process
 
 test: off
