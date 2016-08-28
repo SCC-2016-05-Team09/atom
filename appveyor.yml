@@ -20,16 +20,16 @@ environment:
 install:
   - SET PATH=C:\Program Files\Atom\resources\cli;%PATH%
   - ps: Install-Product node $env:NODE_VERSION $env:PLATFORM
-
+before_build:
+  - cmd: npm install clog
+  - cmd: clog src > report.txt
+  - cmd: more report.txt
+  
 build_script:
   - cd %APPVEYOR_BUILD_FOLDER%
   - C:\projects\atom\script\cibuild.cmd
 
-test: on
-test_script:
-- npm install clog
-- clog src > report.txt
-- more report.txt
+test: off
 deploy: off
 artifacts:
   - path: out\**\AtomSetup.exe
