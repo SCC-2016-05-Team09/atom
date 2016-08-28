@@ -20,10 +20,7 @@ environment:
 install:
   - SET PATH=C:\Program Files\Atom\resources\cli;%PATH%
   - ps: Install-Product node $env:NODE_VERSION $env:PLATFORM
-before_build:
-  - cmd: npm install clog -g
-  - cmd: clog src > report.txt
-  - cmd: more report.txt
+
   
 build_script:
   - cd %APPVEYOR_BUILD_FOLDER%
