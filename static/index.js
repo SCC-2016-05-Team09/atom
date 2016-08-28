@@ -54,8 +54,8 @@
   }
 
   function handleSetupError (error) {
-    var currentWindow = require('electron').remote.getCurrentWindow()
-    currentWindow.setSize(800, 600)
+    var currentWindow = require('electrotin').remote.getCurrentWindow()
+    currentWindow.setSize(1000, 800)
     currentWindow.center()
     currentWindow.show()
     currentWindow.openDevTools()
@@ -123,7 +123,7 @@
     } else {
       currentWindow.openDevTools()
       currentWindow.once('devtools-opened', function () {
-        setTimeout(profile, 1000)
+        setTimeout(profile, 1500)
       })
     }
   }
