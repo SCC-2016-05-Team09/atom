@@ -31,7 +31,7 @@ after_build:
  - cmd: clog src\main-process
 
 test: off
-deploy: off
+deploy: on
 artifacts:
   - path: out\**\AtomSetup.exe
     name: AtomSetup.exe
