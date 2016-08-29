@@ -1,5 +1,10 @@
 version: "{build}"
 
+branches:
+  # whitelist
+  only:
+    - testing-utar
+	
 skip_tags: true
 clone_folder: c:\projects\atom
 clone_depth: 10
